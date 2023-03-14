@@ -1,0 +1,42 @@
+html{
+    font-family: arial;
+}
+
+.topbar{
+    overflow: hidden;
+    background-color: #555;
+    color: white;
+}
+.topbar button{
+    float:right;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 0px;
+    border: 1px;
+}
+
+.topbar input{
+    float:right;
+    margin: 2px;
+    padding: 8px;
+    outline:none;
+}
+.topbar input[type=text]:focus{
+    border:2px #222 solid;
+
+}
+.topbar p{
+    float:left;
+    margin: 8px;
+}
+.header{
+    margin:4px;
+}
+h1{
+    font-size: 40px;
+    margin:8px;
+}
+h3{
+    font-size: 15px;
+    margin: 8px;
+}

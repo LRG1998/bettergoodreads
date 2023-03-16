@@ -17,9 +17,26 @@
         <h3>The internet librarian</h3>
     </div>
     <div class = "topbar">
-        <p>Text</p>
+        <a href="#">Hover test</a>
+        <a href="#">Hover test</a>
+        <a href="#">Hover test</a>
         <input type="text" placeholder="Search...">
         <button>Ask the librarian</button>
+    </div>
+    <div class="content">
+        <p>
+            test of the content border
+        </p>
+    </div>
+    <div class="content">
+        <p>
+            test of the content border
+        </p>
+    </div>
+    <div class="content">
+        <p>
+            test of the content border
+        </p>
     </div>
     </body>
 

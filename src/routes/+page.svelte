@@ -14,7 +14,7 @@
     
     <div class="header">
         <h1>The Librarian</h1>
-        <h3>The internet librarian</h3>
+        <h3>The Internet Librarian</h3>
     </div>
     <div class = "topbar">
         <a href="#">Hover test</a>

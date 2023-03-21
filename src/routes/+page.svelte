@@ -21,7 +21,7 @@
         <a href="#">Hover test</a>
         <a href="#">Hover test</a>
         <input type="text" placeholder="Search...">
-        <button>Ask the librarian</button>
+        <button id="SearchButton">Ask the librarian</button>
     </div>
     <div class="content">
         <p>

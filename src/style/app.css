@@ -67,3 +67,15 @@ h3{
     padding:8px;
     margin:3px 0px 3px 0px
 }
+#active {
+    background-color:#999;
+    color: black;
+    padding: 8px;
+    margin: 3px 0px 3px 0px;
+}
+#usericon{
+    width:64px;
+    border-radius:100%;
+    float:right;
+
+}

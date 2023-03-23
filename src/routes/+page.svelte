@@ -12,28 +12,28 @@
 
 <body data-sveltekit-preload-data="hover">
     
-    <div class="header">
+    <div id="header">
         <h1>The Librarian</h1>
         <h3>The Internet Librarian</h3>
     </div>
-    <div class = "topbar">
+    <div id = "topbar">
         <a href="#">Hover test</a>
         <a href="#">Hover test</a>
         <a href="#">Hover test</a>
         <input type="text" placeholder="Search...">
         <button id="SearchButton">Ask the librarian</button>
     </div>
-    <div class="content">
+    <div id="content">
         <p>
             test of the content border
         </p>
     </div>
-    <div class="content">
+    <div id="content">
         <p>
             test of the content border
         </p>
     </div>
-    <div class="content">
+    <div id="content">
         <p>
             test of the content border
         </p>

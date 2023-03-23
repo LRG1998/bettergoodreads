@@ -13,12 +13,15 @@
 <body data-sveltekit-preload-data="hover">
     
     <div id="header">
+        <div id="title">
             <h1>The Librarian</h1>
             <h3>The Internet Librarian</h3>
+        </div>
             <a href="#">
                 <img src="./images/default.png" alt="User Icon" id = "usericon">
             </a>
     </div>
+
     <div id = "topbar">
         <a href="../" id = "active">Home</a>
         <a href="../about/">About</a>

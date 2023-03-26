@@ -14,11 +14,11 @@
     
     <div id="header">
         <div id="title">
-            <h1>The Librarian</h1>
-            <h3>The Internet Librarian</h3>
+            <img src = "./images/logo.png" alt="logo" id="logo">
         </div>
-            <a href="#">
+            <a id = "user" href="#">
                 <img src="./images/default.png" alt="User Icon" id = "usericon">
+                <p id = "username">%Username%</p>
             </a>
     </div>
 

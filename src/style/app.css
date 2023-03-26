@@ -1,6 +1,7 @@
 html{
     font-family: arial;
     overflow:hidden;
+    background-color: beige;
 }
 
 #topbar{
@@ -78,9 +79,27 @@ h3{
 #usericon{
     width:64px;
     border-radius:100%;
-    float:right;
+    margin: 8px;
+    float:left;
 }
 #title{
     display:inline-block;
     float:left;
+}
+#logo{
+    height:72px;
+}
+#user{
+    display:block;
+    float:right;
+    background-color:#EEE;
+    width:200px;
+    max-height:100px;
+    text-decoration:none;
+}
+#username{
+    float:right;
+}
+#usericon:hover{
+    box-shadow: #111 0px 0px 6px;
 }

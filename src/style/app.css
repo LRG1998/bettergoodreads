@@ -1,7 +1,7 @@
 html{
     font-family: arial;
     overflow:hidden;
-    background-color: beige;
+    background-color: #fffffe;
 }
 
 #topbar{
@@ -99,7 +99,18 @@ h3{
 }
 #username{
     float:right;
+    color: black;
 }
 #usericon:hover{
-    box-shadow: #111 0px 0px 6px;
+    box-shadow: #444 0px 0px 6px;
+}
+#edit{
+    font-size: 10px;
+    float:right;
+    margin-top:-8px;
+    text-decoration:none;
+    color: silver;
+}
+#edit:hover{
+    text-decoration:underline;
 }

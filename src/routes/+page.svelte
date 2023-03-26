@@ -19,6 +19,7 @@
             <a id = "user" href="#">
                 <img src="./images/default.png" alt="User Icon" id = "usericon">
                 <p id = "username">%Username%</p>
+                <a href="#" id = "edit">Edit Info</a>
             </a>
     </div>
 

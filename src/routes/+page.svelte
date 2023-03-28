@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
     import '../style/app.css'
+    
 </script>
 
 
@@ -13,18 +14,24 @@
 <body data-sveltekit-preload-data="hover">
     
     <div id="header">
-        <div id="title">
+        <a id="title" href="./">
             <img src = "./images/logo.png" alt="logo" id="logo">
-        </div>
-            <a id = "user" href="#">
-                <img src="./images/default.png" alt="User Icon" id = "usericon">
-                <p id = "username">%Username%</p>
-                <a href="#" id = "edit">Edit Info</a>
+        </a>
+        <h2>
+            Home
+        </h2>
+
+        <div id = "user">
+            <a href="./profile/">
+            <img src="./images/default.png" alt="User Icon" id = "usericon">
             </a>
+            <p id = "username">%Username%</p><br>
+            <a href="#" id = "edit">Edit Info</a>
+        </div>                
     </div>
+            
 
     <div id = "topbar">
-        <a href="../" id = "active">Home</a>
         <a href="../about/">About</a>
         <a href="#">Hover test</a>
         <input type="text" placeholder="Search...">

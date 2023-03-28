@@ -34,14 +34,6 @@ html{
     margin:4px;
     overflow: hidden;
 }
-h1{
-    font-size: 40px;
-    margin:4px;
-}
-h3{
-    font-size: 15px;
-    margin:4px;
-}
 #content{
     border: 1px #444 solid;
     display: inline-block;
@@ -88,29 +80,37 @@ h3{
 }
 #logo{
     height:72px;
+    margin-right: 32px;
+    padding-right: 8px;
+    border-right: black solid 2px;
 }
 #user{
-    display:block;
     float:right;
     background-color:#EEE;
-    width:200px;
     max-height:100px;
     text-decoration:none;
 }
-#username{
+#edit{
     float:right;
+    font-size: 10px;
+    text-decoration: none;
+    color: silver;
+}
+#edit:hover{
+    text-decoration: underline;
+}
+
+#username{
     color: black;
+    float:right;
 }
 #usericon:hover{
     box-shadow: #444 0px 0px 6px;
 }
-#edit{
-    font-size: 10px;
-    float:right;
-    margin-top:-8px;
-    text-decoration:none;
-    color: silver;
+h2{
+    width: 200px;
+    float: left;
 }
-#edit:hover{
-    text-decoration:underline;
+#content p{
+    text-indent: 50px;
 }

@@ -3,7 +3,6 @@ html{
     overflow:hidden;
     background-color: #fffffe;
 }
-
 #topbar{
     overflow: hidden;
     background-color: #555;
@@ -16,7 +15,6 @@ html{
     border-radius: 0px;
     border: 1px;
 }
-
 #topbar input{
     float:right;
     margin: 2px;
@@ -34,21 +32,23 @@ html{
     margin:4px;
     overflow: hidden;
 }
-#content{
+#recommended{
     border: 1px #444 solid;
     display: inline-block;
     border-radius: 8px;
     margin: 8px;
     padding: 8px;
-    background-color: #999;
+    background-color: #ebebeb;
+    height: 512px;
+
 }
-#content:hover{
+#recommended:hover{
     box-shadow: #111 2px 2px 6px;
 }
-#content:active{
+#recommended:active{
     box-shadow: none;
 }
-#topbar a{
+#barnav{
     text-decoration:none;
     color:inherit;
     border-right:#111 solid 1px;
@@ -56,7 +56,7 @@ html{
     float:left;
     margin:3px 0px 3px 0px
 }
-#topbar a:hover{
+#barnav:hover{
     background-color:#999;
     color:black;
     padding:8px;
@@ -89,6 +89,8 @@ html{
     background-color:#EEE;
     max-height:100px;
     text-decoration:none;
+    width: 210px;
+    padding: 4px;
 }
 #edit{
     float:right;
@@ -99,10 +101,9 @@ html{
 #edit:hover{
     text-decoration: underline;
 }
-
 #username{
     color: black;
-    float:right;
+    margin: none;
 }
 #usericon:hover{
     box-shadow: #444 0px 0px 6px;
@@ -111,6 +112,50 @@ h2{
     width: 200px;
     float: left;
 }
-#content p{
+#recommended p{
     text-indent: 50px;
+}
+#resultfield {
+    padding: 8px;
+    border: 1px solid black;
+    margin-top: 24px;
+    border-radius: 6px;
+}
+#login {
+    float:right;
+    background-color:#EEE;
+    max-height:100px;
+    text-decoration:none;
+    font-size: 12px;
+    padding: 4px;
+    width: 210px;
+}
+#login input{
+    border: none;
+    max-width: 120px;
+    padding: 2px;
+    float:right;
+}
+#login input:focus{
+    border:none;
+    outline:2px #bdffdb solid;
+}
+#login button{
+    float:right;
+    background-color: #DDD;
+    border:#111 1px solid;
+}
+#content{
+    display:grid;
+    padding: 0px 256px;
+    margin:8px 0px;
+    border:silver 1px solid;
+    box-shadow: #999 1px 2px 2px;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}
+#user button{
+    float:right;
+    background-color:#ddd;
+    border:#111 1px solid;
 }

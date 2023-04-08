@@ -1,42 +1,40 @@
 <script>
-// @ts-nocheck
+    import { onMount } from "svelte";
+let loggedin = false;
 
-  import { onMount } from "svelte";
-    let loggedin = false;
-
-    onMount(() => {
-        let username = "";
-        if(loggedin == false) {
-            document.getElementById("login").hidden = false;
-            document.getElementById("user").hidden = true;
-        }
-        else{
-            document.getElementById("login").hidden = true;
-            document.getElementById("user").hidden = false;
-        }
-        
-    });
-    function logout(){
-        loggedin = false;
+onMount(() => {
+    let username = "";
+    if(loggedin == false) {
         document.getElementById("login").hidden = false;
         document.getElementById("user").hidden = true;
-    };
-    function login(username){
-        let userinput = document.getElementById("userinput")
-        let userpass = document.getElementById("pass")
-        if(userinput.value != ""){
-        username = userinput.value;
-        document.getElementById("username").innerText = username;
-        loggedin = true;
+    }
+    else{
         document.getElementById("login").hidden = true;
         document.getElementById("user").hidden = false;
-        userinput.style.border="none";
-        userinput.value = "";
-        userpass.value = "";
-        } else{
-            userinput.style.border="red 1px solid"
-        }
-    };
+    }
+    
+});
+function logout(){
+    loggedin = false;
+    document.getElementById("login").hidden = false;
+    document.getElementById("user").hidden = true;
+};
+function login(username){
+    let userinput = document.getElementById("userinput")
+    let userpass = document.getElementById("pass")
+    if(userinput.value != ""){
+    username = userinput.value;
+    document.getElementById("username").innerText = username;
+    loggedin = true;
+    document.getElementById("login").hidden = true;
+    document.getElementById("user").hidden = false;
+    userinput.style.border="none";
+    userinput.value = "";
+    userpass.value = "";
+    } else{
+        userinput.style.border="red 1px solid"
+    }
+};
 </script>
 <head>
 	<meta charset="utf-8" />
@@ -55,7 +53,7 @@
             Home
         </h2>
         <div id = "login">
-            <p>User: <input id = "userinput" type="text"></p>
+            <p>Username: <input id = "userinput" type="text" placeholder="Enter username"></p>
             <p>Password: <input id="pass" type = "password"></p>
             <button type="submit"on:click={()=>login()}>Log in</button>
         </div>

@@ -7,6 +7,7 @@ html{
     overflow: hidden;
     background-color: #555;
     color: white;
+    box-shadow: 1px 2px 2px #999;
 }
 #topbar button{
     float:right;
@@ -34,13 +35,15 @@ html{
 }
 #recommended{
     border: 1px #444 solid;
-    display: inline-block;
+    display: grid;
+    justify-content: center;
     border-radius: 8px;
     margin: 8px;
     padding: 8px;
     background-color: #ebebeb;
     height: 512px;
-
+    text-decoration: none;
+    color: black;
 }
 #recommended:hover{
     box-shadow: #111 2px 2px 6px;
@@ -75,7 +78,6 @@ html{
     float:left;
 }
 #title{
-    display:inline-block;
     float:left;
 }
 #logo{
@@ -91,6 +93,7 @@ html{
     text-decoration:none;
     width: 210px;
     padding: 4px;
+    box-shadow: 1px 2px 2px #999;
 }
 #edit{
     float:right;
@@ -113,7 +116,7 @@ h2{
     float: left;
 }
 #recommended p{
-    text-indent: 50px;
+    text-align: center;
 }
 #resultfield {
     padding: 8px;
@@ -129,6 +132,7 @@ h2{
     font-size: 12px;
     padding: 4px;
     width: 210px;
+    box-shadow: 1px 2px 2px #999;
 }
 #login input{
     border: none;
@@ -158,4 +162,17 @@ h2{
     float:right;
     background-color:#ddd;
     border:#111 1px solid;
+}
+#author{
+    font-size: 12px;
+}
+#title{
+    font-size: 18px;
+}
+footer{
+    background-color:#555;
+    color: white;
+    margin: 8px;
+    padding: 4px;
+    box-shadow: 1px 2px 2px #999;
 }

@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
   import { onMount } from "svelte";
     let loggedin = false;
 
@@ -75,21 +77,33 @@
         <a href="search/"><button id="SearchButton">Ask the librarian</button></a>
     </div>
     <div id= "content">
-    <div id="recommended">
-        <p>
-            test of the content border
+    <a id="recommended" href="#">
+        <img src="images/bkplchldr.png">
+        <p id = "title">
+            Placeholder title
         </p>
-    </div>
-    <div id="recommended">
-        <p>
-            test of the content border
+        <p id = "author">
+            placeholder author
         </p>
-    </div>
-    <div id="recommended">
-        <p>
-            test of the content border
+    </a>
+    <a id="recommended" href = "#">
+        <img src="images/bkplchldr.png">
+        <p id = "title">
+            Placeholder title
         </p>
-    </div>
+        <p id = "author">
+            placeholder author
+        </p>
+    </a>
+    <a id="recommended" href="#">
+        <img src="images/bkplchldr.png">
+        <p id = "title">
+            Placeholder title
+        </p>
+        <p id = "author">
+            placeholder author
+        </p>
+    </a>
 </div>
     </body>
     <footer>

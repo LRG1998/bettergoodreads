@@ -1,7 +1,3 @@
-<script>
-    import '../../style/app.css'
-</script>
-
 <head>
 	<meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
@@ -32,3 +28,8 @@
     </div>
 
 </body>
+<footer>
+    <p>
+        &copy 2023
+    </p>
+</footer>

@@ -2,15 +2,18 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-async function createNewBook(title, author, published) {
-  const result = await prisma.book.create({
-    data: {
-      title,
-      author,
-      published,
-    },
-  });
-  return result;
+async function getFirstBook(){
+  var firstBook = await prisma.book.findFirst();
+  return firstBook;
 }
-
-export { prisma, createNewBook };
+async function getBooks(){
+  const allBooks = await prisma.book.findMany({
+    where: {
+      Author: {
+        contains: 'Yahtzee',
+    }
+  }
+  })
+  console.log(allBooks)
+}
+getBooks()

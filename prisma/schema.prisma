@@ -3,6 +3,7 @@
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["fullTextSearch","fullTextIndex"]
 }
 
 datasource db {
@@ -11,9 +12,9 @@ datasource db {
 }
 model Book{
   id Int @id @default(autoincrement())
-  ISBN Int
   title String
   Author String
+  ISBN BigInt
   Year Int
   Publisher String
   bookStatus String @default("unread")

@@ -1,5 +1,5 @@
 <script>
-    import { onMount } from "svelte";
+        import { onMount } from "svelte";
 let loggedin = false;
 
 onMount(() => {
@@ -35,6 +35,7 @@ function login(username){
         userinput.style.border="red 1px solid"
     }
 };
+
 </script>
 <head>
 	<meta charset="utf-8" />

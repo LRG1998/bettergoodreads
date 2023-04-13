@@ -7,9 +7,10 @@ async function getFirstBook(){
   return firstBook;
 }
 async function getBooks(term){
+  var titles = new Array();
   var allBooks = await prisma.book.findMany({
     where: {
-      Publisher: {
+      Author: {
         contains: term
       }
     }
@@ -18,9 +19,12 @@ async function getBooks(term){
     console.log("no books match term.")
   }
   else{
-    console.log(allBooks.length)
+    for(let i = 0; i<allBooks.length; i++){
+      titles.push(allBooks[i].title.toString());
+    }
+    };
+    console.log(titles)
   }
 
-}
-var authorname = "yahtzee"
+var authorname = "croshaw"
 getBooks(authorname)

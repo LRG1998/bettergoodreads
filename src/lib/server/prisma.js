@@ -26,5 +26,13 @@ async function getBooks(term){
     console.log(titles)
   }
 
-var authorname = "croshaw"
-getBooks(authorname)
+export async function getRandomBook(){
+  var randint = Math.floor(Math.random()*(await prisma.book.findMany()).length)
+  var randbook = await prisma.book.findUnique({
+    where: {
+      id: randint
+    }
+  })
+  console.log(randbook)
+}
+getRandomBook()

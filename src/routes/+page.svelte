@@ -3,6 +3,7 @@
 let loggedin = false;
 
 onMount(() => {
+    // @ts-ignore
     let username = "";
     if(loggedin == false) {
         document.getElementById("login").hidden = false;
@@ -22,14 +23,18 @@ function logout(){
 function login(username){
     let userinput = document.getElementById("userinput")
     let userpass = document.getElementById("pass")
+    // @ts-ignore
     if(userinput.value != ""){
+    // @ts-ignore
     username = userinput.value;
     document.getElementById("username").innerText = username;
     loggedin = true;
     document.getElementById("login").hidden = true;
     document.getElementById("user").hidden = false;
     userinput.style.border="none";
+    // @ts-ignore
     userinput.value = "";
+    // @ts-ignore
     userpass.value = "";
     } else{
         userinput.style.border="red 1px solid"

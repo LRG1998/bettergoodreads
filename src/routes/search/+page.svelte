@@ -74,7 +74,6 @@ function login(username){
 
     <div id = "topbar">
         <a id = "barnav" href="../about/">About</a>
-        <a id = "barnav" href="#">Hover test</a>
         <input type="text" placeholder="Search...">
         <a href="search/"><button id="SearchButton">Ask the librarian</button></a>
     </div>

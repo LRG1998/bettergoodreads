@@ -16,14 +16,14 @@ async function getBooks(term){
     }
   })
   if (allBooks.length == 0){
-    console.log("no books match term.")
+    return "no books match term."
   }
   else{
     for(let i = 0; i<allBooks.length; i++){
       titles.push(allBooks[i].title.toString());
     }
     };
-    console.log(titles)
+    return titles
   }
 
 export async function getRandomBook(){
@@ -33,6 +33,6 @@ export async function getRandomBook(){
       id: randint
     }
   })
-  console.log(randbook)
+  return randbook
 }
 getRandomBook()

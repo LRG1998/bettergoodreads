@@ -1,4 +1,5 @@
 <script>
+    import Books from '../books.svelte'
         import { onMount } from "svelte";
 let loggedin = false;
 
@@ -42,6 +43,9 @@ function login(username){
 };
 
 </script>
+<main>
+    <Books />
+</main>
 <head>
 	<meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />

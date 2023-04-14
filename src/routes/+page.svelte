@@ -48,7 +48,6 @@ function login(username){
     <link rel = "stylesheet" href="style/app.css">
     <meta name="viewport" content="width=device-width" />
 </head>
-
 <body data-sveltekit-preload-data="hover">
     
     <div id="header">
@@ -72,8 +71,6 @@ function login(username){
             <button type="submit" on:click={()=>logout()}>Log off</button>
         </div>                
     </div>
-            
-
     <div id = "topbar">
         <a id = "barnav" href="../about/">About</a>
         <a id = "barnav" href="#">Hover test</a>
@@ -82,30 +79,30 @@ function login(username){
     </div>
     <div id= "content">
     <a id="recommended" href="#">
-        <img src="images/bkplchldr.png">
+        <img src="images/Carrie.jpg">
         <p id = "title">
-            Placeholder title
+            Carrie
         </p>
         <p id = "author">
-            placeholder author
+            Steven King
         </p>
     </a>
     <a id="recommended" href = "#">
-        <img src="images/bkplchldr.png">
+        <img src="images/Digital_Fortress.jpg">
         <p id = "title">
-            Placeholder title
+            Digital Fortress
         </p>
         <p id = "author">
-            placeholder author
+            Dan Brown
         </p>
     </a>
     <a id="recommended" href="#">
-        <img src="images/bkplchldr.png">
+        <img src="images/Jam.jpg">
         <p id = "title">
-            Placeholder title
+            Jam
         </p>
         <p id = "author">
-            placeholder author
+            Yahtzee Croshaw
         </p>
     </a>
 </div>

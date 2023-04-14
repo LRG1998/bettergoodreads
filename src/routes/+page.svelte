@@ -87,7 +87,7 @@ function login(username){
             Carrie
         </p>
         <p id = "author">
-            Steven King
+            Stephen King
         </p>
     </a>
     <a id="recommended" href = "#">

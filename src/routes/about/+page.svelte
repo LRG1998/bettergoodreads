@@ -24,7 +24,6 @@
     </div>
     <div id = "topbar">
         <a href="../about/" id = "active">About</a>
-        <a href="#">Hover test</a>
         <input type="text" placeholder="Search...">
         <button id="SearchButton">Ask the librarian</button>
     </div>

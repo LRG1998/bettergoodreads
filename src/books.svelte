@@ -3,14 +3,9 @@
     import PrismaClient from '@prisma/client'
         onMount(()=>{
     async function getBooks(){
-        const res = await fetch('./prisma')
-        console.log(res.ok)
+        const res = await fetch('$/prisma')
+        console.log(res)
 
-        if (res.ok) {
-            return books;
-        } else {
-            throw new Error(books);
-        }
     }
     getBooks();
 })

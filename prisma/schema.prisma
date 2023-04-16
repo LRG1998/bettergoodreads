@@ -4,11 +4,12 @@
 generator client {
   provider = "prisma-client-js"
 }
-
+//Creates the route to the db provider
 datasource db {
   provider = "sqlite"
   url      = "file:./dev.sqlite"
 }
+//Creates the Schema for the book table
 model Book{
   id Int @id @default(autoincrement())
   title String

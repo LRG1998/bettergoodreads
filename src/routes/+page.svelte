@@ -48,7 +48,7 @@ function login(username){
 </main>
 <head>
 	<meta charset="utf-8" />
-    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <link rel="icon" href="favicon.png" />
     <link rel = "stylesheet" href="style/app.css">
     <meta name="viewport" content="width=device-width" />
 </head>

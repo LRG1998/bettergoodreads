@@ -66,10 +66,14 @@ html{
     margin:3px 0px 3px 0px
 }
 #active {
-    background-color:#999;
-    color: black;
-    padding: 8px;
-    margin: 3px 0px 3px 0px;
+    text-decoration:none;
+    color:black;
+    padding:8px;
+    float:left;
+    margin:3px 0px 3px 0px;
+    background-color: #999;
+}
+
 }
 #usericon{
     width:64px;

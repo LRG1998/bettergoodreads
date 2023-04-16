@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-
+    let loggedin = false;
   onMount(() => {
     // @ts-ignore
     let username = "";

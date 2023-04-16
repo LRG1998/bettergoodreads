@@ -9,21 +9,21 @@ async function getFirstBook(){
 async function getBooks(term){
   var titles = new Array();
   var allBooks = await prisma.book.findMany({
-    where: {
-      Author: {
+    where:{
+      Author:{
         contains: term
       }
-    }
+    },
   })
   if (allBooks.length == 0){
-    return "no books match term."
+    console.log("no books match term.")
   }
   else{
     for(let i = 0; i<allBooks.length; i++){
       titles.push(allBooks[i].title.toString());
     }
     };
-    return titles
+    console.log(allBooks)
   }
 
 export async function getRandomBook(){
@@ -33,6 +33,12 @@ export async function getRandomBook(){
       id: randint
     }
   })
-  return randbook
+  console.log(randbook)
 }
-getRandomBook()
+  export async function getAllBooks(){
+    var books = await prisma.book.findMany()
+    console.log(books)
+  }
+  
+
+getBooks('Yahtzee')
